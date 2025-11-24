@@ -14,17 +14,17 @@ function App() {
 
   // Background Options
   const backgrounds = [
-    { id: 'tree', src: `${import.meta.env.BASE_URL}minimal_tree.png`, label: 'Nature', type: 'far' },
-    { id: 'street', src: `${import.meta.env.BASE_URL}india_street.png`, label: 'Street', type: 'far' },
-    { id: 'interior', src: `${import.meta.env.BASE_URL}modern_interior.png`, label: 'Interior', type: 'mid' },
-    { id: 'people', src: `${import.meta.env.BASE_URL}portrait_group.png`, label: 'People', type: 'mid' },
-    { id: 'animal', src: `${import.meta.env.BASE_URL}golden_retriever.png`, label: 'Animal', type: 'close' },
-    { id: 'book', src: `${import.meta.env.BASE_URL}open_book_reading.png`, label: 'Reading', type: 'near' },
+    { id: 'tree', src: './minimal_tree.png', label: 'Nature', type: 'far' },
+    { id: 'street', src: './india_street.png', label: 'Street', type: 'far' },
+    { id: 'interior', src: './modern_interior.png', label: 'Interior', type: 'mid' },
+    { id: 'people', src: './portrait_group.png', label: 'People', type: 'mid' },
+    { id: 'animal', src: './golden_retriever.png', label: 'Animal', type: 'close' },
+    { id: 'book', src: './open_book_reading.png', label: 'Reading', type: 'near' },
     // New Scenes
-    { id: 'beach', src: `${import.meta.env.BASE_URL}scene_beach.png`, label: 'Beach', type: 'far' },
-    { id: 'night', src: `${import.meta.env.BASE_URL}scene_night_city.png`, label: 'Night City', type: 'far' },
-    { id: 'forest', src: `${import.meta.env.BASE_URL}scene_forest.png`, label: 'Forest', type: 'far' },
-    { id: 'snow', src: `${import.meta.env.BASE_URL}scene_snow.png`, label: 'Snow', type: 'mid' },
+    { id: 'beach', src: './scene_beach.png', label: 'Beach', type: 'far' },
+    { id: 'night', src: './scene_night_city.png', label: 'Night City', type: 'far' },
+    { id: 'forest', src: './scene_forest.png', label: 'Forest', type: 'far' },
+    { id: 'snow', src: './scene_snow.png', label: 'Snow', type: 'mid' },
   ];
 
   const currentBackground = backgrounds.find(b => b.id === backgroundId) || backgrounds[0];
