@@ -5,6 +5,18 @@ import { DialSelector } from './components/DialSelector';
 import { Eye, EyeOff } from 'lucide-react';
 import './App.css';
 
+// Import Images
+import treeImg from './assets/images/minimal_tree.png';
+import streetImg from './assets/images/india_street.png';
+import interiorImg from './assets/images/modern_interior.png';
+import peopleImg from './assets/images/portrait_group.png';
+import animalImg from './assets/images/golden_retriever.png';
+import bookImg from './assets/images/open_book_reading.png';
+import beachImg from './assets/images/scene_beach.png';
+import nightImg from './assets/images/scene_night_city.png';
+import forestImg from './assets/images/scene_forest.png';
+import snowImg from './assets/images/scene_snow.png';
+
 function App() {
   const [prescription, setPrescription] = useState({ left: -2.0, right: -1.5 });
   const [glassesOn, setGlassesOn] = useState(true);
@@ -14,17 +26,17 @@ function App() {
 
   // Background Options
   const backgrounds = [
-    { id: 'tree', src: './minimal_tree.png', label: 'Nature', type: 'far' },
-    { id: 'street', src: './india_street.png', label: 'Street', type: 'far' },
-    { id: 'interior', src: './modern_interior.png', label: 'Interior', type: 'mid' },
-    { id: 'people', src: './portrait_group.png', label: 'People', type: 'mid' },
-    { id: 'animal', src: './golden_retriever.png', label: 'Animal', type: 'close' },
-    { id: 'book', src: './open_book_reading.png', label: 'Reading', type: 'near' },
+    { id: 'tree', src: treeImg, label: 'Nature', type: 'far' },
+    { id: 'street', src: streetImg, label: 'Street', type: 'far' },
+    { id: 'interior', src: interiorImg, label: 'Interior', type: 'mid' },
+    { id: 'people', src: peopleImg, label: 'People', type: 'mid' },
+    { id: 'animal', src: animalImg, label: 'Animal', type: 'close' },
+    { id: 'book', src: bookImg, label: 'Reading', type: 'near' },
     // New Scenes
-    { id: 'beach', src: './scene_beach.png', label: 'Beach', type: 'far' },
-    { id: 'night', src: './scene_night_city.png', label: 'Night City', type: 'far' },
-    { id: 'forest', src: './scene_forest.png', label: 'Forest', type: 'far' },
-    { id: 'snow', src: './scene_snow.png', label: 'Snow', type: 'mid' },
+    { id: 'beach', src: beachImg, label: 'Beach', type: 'far' },
+    { id: 'night', src: nightImg, label: 'Night City', type: 'far' },
+    { id: 'forest', src: forestImg, label: 'Forest', type: 'far' },
+    { id: 'snow', src: snowImg, label: 'Snow', type: 'mid' },
   ];
 
   const currentBackground = backgrounds.find(b => b.id === backgroundId) || backgrounds[0];
