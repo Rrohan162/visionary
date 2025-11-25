@@ -14,7 +14,9 @@ function App() {
 
   // Helper to get correct path for GitHub Pages
   const getImagePath = (filename) => {
-    return `${import.meta.env.BASE_URL}images/${filename}`;
+    // Hardcoding the base path to ensure it works on GitHub Pages
+    const basePath = '/visionary/';
+    return `${basePath}images/${filename}`;
   };
 
   // Background Options
